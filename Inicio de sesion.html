@@ -1,0 +1,262 @@
+<!DOCTYPE html> <!--Declara que el documento es un documento HTML5.-->
+<html lang="en"> <!--Declara que el idioma del documento es el inglés.-->
+<head> <!--Etiqueta de apertura de la sección de la cabeza del documento HTML-->
+	<meta charset="UTF-8"> <!--Establece la codificación del documento en UTF-8.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Configura la ventana gráfica para que se ajuste al dispositivo en el que se está viendo.-->
+	<link rel="icon" type="image/png" href="./Matriculas/gorro-de-graduacion.png"> <!--Agrega un icono al sitio web.-->
+	<title>Inicio de Sesión</title> <!--Establece el título del sitio web.-->
+</head> <!--Etiqueta de cierre de la sección de la cabeza del documento HTML.-->
+<body> <!--Etiqueta de apertura de la sección del cuerpo del documento HTML.-->
+	<div class="container"> <!--Etiqueta de apertura de un contenedor. Los contenedores se utilizan para agrupar elementos HTML.-->
+<div class="container-fluid">
+	<img src="./imagenes/escudo csc.png" alt="" style="margin-top: 120px; margin-left:140px;">
+</div>
+<!--Etiqueta de apertura de un contenedor de fluido, que se expande para adaptarse al ancho de la pantalla. Dentro del contenedor hay una imagen del escudo de la institución.-->
+<div class="login-wrap"> <!--Etiqueta de apertura de un contenedor para el formulario de inicio de sesión.-->
+	<div class="login-html"> <!--Etiqueta de apertura del formulario de inicio de sesión.-->
+        <br>
+        <br>
+        <br>
+		<!--Etiquetas de salto de línea para agregar espacio entre elementos.-->
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Inicia Sesión </label> <!--Etiqueta de entrada para un botón de radio, que se utiliza para seleccionar una de varias opciones. Este botón de radio está seleccionado por defecto, lo que significa que el formulario de inicio de sesión se mostrará de forma predeterminada.-->
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Regístrate </label><!--Etiqueta de entrada para otro botón de radio, que se utiliza para seleccionar el formulario de registro.-->
+		<div class="login-form"> <!--Etiqueta de apertura del formulario de inicio de sesión o registro, dependiendo del botón de radio que esté seleccionado.-->
+			<div class="sign-in-htm"> <!--Etiqueta de apertura del formulario de inicio de sesión.-->
+				<div class="group"> <!--Etiqueta de apertura de un grupo de elementos del formulario.-->
+					<label for="user" class="label">Usuario</label> <!--Etiqueta de texto para el campo de usuario.-->
+					<input id="user" type="text" class="input"> <!--Etiqueta de entrada para el campo de usuario.-->
+				</div> <!--Etiqueta de cierre-->
+				<div class="group">
+					<label for="pass" class="label">Contraseña</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<!--Este código crea un grupo para el campo de contraseña. El grupo incluye una etiqueta para el campo de contraseña y un campo de entrada de tipo "password". El campo de entrada tiene el atributo data-type="password", que indica al navegador que el campo contiene una contraseña.-->
+				<div class="group">
+					<input id="check" type="checkbox" class="check" checked>
+					<label for="check"><span class="icon"></span> Mantenerme conectado</label>
+				</div>
+				<!--Este código crea un grupo para la casilla de verificación "Mantenerme conectado". La casilla de verificación tiene el atributo checked establecido en true, lo que significa que la casilla de verificación estará marcada por defecto.-->
+				<div class="group">
+					<input type="submit" class="button" value="Seguir">
+				</div>
+				<!--Este código crea un grupo para el botón de envío. El botón de envío tiene el valor "Seguir".-->
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="#forgot">Olvidaste la contraseña?</a>
+				</div>
+				<!--Este código crea una línea horizontal y un enlace al formulario de recuperación de contraseña.-->
+			</div>
+			<div class="sign-up-htm">
+				<div class="group">
+					<label for="user" class="label">Nombre</label>
+					<input id="user" type="text" class="input">
+				</div>
+			<!--Este código crea el formulario de registro. El formulario incluye un grupo para el campo de nombre, que tiene una etiqueta y un campo de entrada de tipo "text".-->
+				<div class="group">
+					<label for="pass" class="label">Correo Electronico</label>
+					<input id="pass" type="text" class="input">
+				</div>
+			<!--Este código crea un grupo para el campo de correo electrónico, que tiene una etiqueta y un campo de entrada de tipo "text".-->			
+                <div class="group">
+					<label for="user" class="label">Numero de Telefono</label>
+					<input id="phone" type="phone" class="input">
+				</div>
+			<!--Este código crea un grupo para el campo de número de teléfono, que tiene una etiqueta y un campo de entrada de tipo "phone".-->	
+				<div class="group">
+					<input type="submit" class="button" value="Enviar Solicitud de Ingreso">
+				</div>
+			<!--Este código crea un grupo para el botón de envío del formulario de registro. El botón de envío tiene el valor "Enviar Solicitud de Ingreso".-->
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<label for="tab-1">Tienes una cuenta?</a>
+				</div>
+			<!--Este código crea una línea horizontal y un enlace al formulario de inicio de sesión.-->	
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
+<style>
+    body{
+	margin:0;
+	color:#98c3e7;
+	background:#d3e3e7;
+	font:600 16px/18px 'Open Sans',sans-serif;
+}
+/*Establece los estilos generales del cuerpo de la página, incluyendo el margen, el color, el fondo y la fuente.*/
+
+*,:after,:before{box-sizing:border-box} /*Establece que todos los elementos de la página deben tener su tamaño determinado por el contenido del elemento y no por los márgenes o el relleno.*/
+.clearfix:after,.clearfix:before{content:'';display:table} /*Establece que los elementos con la clase clearfix deben tener un ancho del 100% y un alto de 0. Esto es útil para evitar que floten otros elementos alrededor de ellos.*/
+.clearfix:after{clear:both;display:block} /*Establece que el elemento con la clase clearfix:after debe borrar todos los flotadores de su contenedor.*/
+a{color:inherit;text-decoration:none} /*Establece que los enlaces deben tener el mismo color que el texto que los rodea y no deben tener decoración.*/
+
+.login-wrap{
+	width:100%;
+	margin-left: 700px;
+	margin-top: -521px;
+	max-width:525px;
+	min-height:670px;
+	position:relative;
+	background:url(https://i.pinimg.com/1200x/45/70/3f/45703ff7bd47719ffaab3b5b2be0c2a2.jpg) no-repeat center;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+/*Establece los estilos del contenedor de inicio de sesión, incluyendo el ancho, el margen, la altura mínima, la posición, el fondo y la sombra.*/
+.login-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:90px 70px 50px 70px;
+	background:rgba(40,57,101,.9);
+}
+/*Establece los estilos del elemento login-html, incluyendo el ancho, el alto, la posición, el relleno y el fondo.*/
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+}
+/*Establece los estilos de los elementos sign-in-htm y sign-up-htm, incluyendo la posición, la transformación, la visibilidad de la cara posterior y la transición.*/
+
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+	display:none;
+}
+/*Oculta los elementos sign-in, sign-up y check.*/
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+	text-transform:uppercase;
+}
+/*Convierte el texto de los elementos `tab*/
+.login-html .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+/*Establece los estilos de las pestañas de inicio de sesión y registro, incluyendo el tamaño de la fuente, el margen derecho, el relleno inferior, el margen superior e inferior, la visualización y el borde inferior.*/
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+	color:#fff;
+	border-color:#1161ee;
+}
+/*Establece que las pestañas de inicio de sesión y registro estén seleccionadas cuando los botones de radio correspondientes estén seleccionados. Las pestañas seleccionadas tendrán un color de texto blanco y un borde inferior azul.*/
+.login-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+/*Establece los estilos del formulario de inicio de sesión, incluyendo la altura mínima, la posición, la perspectiva y el estilo de transformación.*/
+.login-form .group{
+	margin-bottom:15px;
+}
+/*Establece que los grupos de campos del formulario de inicio de sesión tengan un margen inferior de 15 píxeles.*/
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+/*Establece que las etiquetas, las entradas y los botones del formulario de inicio de sesión tengan un ancho del 100%, un color de texto blanco y una visualización en bloque.*/
+.login-form .group .input,
+.login-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+/*Establece que las entradas y los botones del formulario de inicio de sesión no tengan borde, tengan un relleno de 15 píxeles en la parte superior e inferior y 20 píxeles a los lados, tengan un radio de borde de 25 píxeles y un fondo semitransparente blanco.*/
+.login-form .group input[data-type="password"]{
+	-text-security: circle;
+	-webkit-text-security:circle;
+}
+/*Establece que los campos de contraseña del formulario de inicio de sesión tengan los caracteres ocultos.*/
+.login-form .group .label{
+	color:#aaa;
+	font-size:12px;
+}
+/*Establece que las etiquetas del formulario de inicio de sesión tengan un color gris claro y un tamaño de fuente de 12 píxeles.*/
+.login-form .group .button{
+	background:#1161ee;
+}
+/*Establece que los botones del formulario de inicio de sesión tengan un fondo azul.*/
+.login-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,0.1);
+}
+/*Establece los estilos de los íconos de las casillas de verificación del formulario de inicio de sesión, incluyendo el ancho, el alto, el radio de borde, la posición, la visualización y el fondo semitransparente blanco*/
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+/*Establece los estilos de los elementos pseudo*/
+.login-form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+/*Establece los estilos del elemento pseudo :before de los íconos de las casillas de verificación del formulario de inicio de sesión. Este elemento se utiliza para crear una marca de verificación cuando la casilla de verificación está marcada.*/
+.login-form .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+/*Establece los estilos del elemento pseudo :after de los íconos de las casillas de verificación del formulario de inicio de sesión. Este elemento se utiliza para crear una barra diagonal cuando la casilla de verificación no está marcada.*/
+.login-form .group .check:checked + label{
+	color:#fff;
+}
+/*Establece que el texto de la etiqueta de una casilla de verificación esté blanco cuando la casilla de verificación esté marcada.*/
+.login-form .group .check:checked + label .icon{
+	background:#1161ee;
+}
+/*Establece que el fondo del ícono de una casilla de verificación sea azul cuando la casilla de verificación esté marcada*/
+.login-form .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+/*Establece que el elemento pseudo :before del ícono de una casilla de verificación se escale y gire cuando la casilla de verificación esté marcada.*/
+.login-form .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+/*Establece que el elemento pseudo :after del ícono de una casilla de verificación se escale y gire cuando la casilla de verificación esté marcada.*/
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+	transform:rotate(0);
+}
+/*Establece que el formulario de inicio de sesión se muestre cuando el botón de radio de inicio de sesión esté seleccionado.*/
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+	transform:rotate(0);
+}
+/*Establece que el formulario de registro se muestre cuando el botón de radio de registro esté seleccionado*/
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+}
+/*Establece los estilos de la línea horizontal que separa el formulario de inicio de sesión y el enlace de recuperación de contraseña.*/
+.foot-lnk{
+	text-align:center;
+}
+/*Establece que el enlace de recuperación de contraseña se centre.*/
+</style>

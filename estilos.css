@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+:focus{
+    outline: none;
+}
+
+body{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    font-family: 'REM', sans-serif;
+  
+}
+
+/* FORMULARIO =================================== */
+
+.form_wrap{
+    width: 1050px;
+    height: 530px;
+    margin: 50px 120px;
+    display: flex;
+
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Datos*/
+
+.cantact_info::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: #4091EC;
+    opacity: 0.9;
+}
+
+.cantact_info{
+    width: 38%;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-position: center center;
+
+}
+/*Media*/
+@media (max-width:1300px){
+    body{
+      margin: 0px;
+    }
+   .form_wrap{
+      display: inline ;
+      margin: 0px;
+     
+   }
+  
+   .cantact_info{
+      margin: 0px;
+      margin-right: -40px;
+      width: 100%;
+      margin-top: 0px;
+  }
+  
+  .form_contact{
+      background-color: #ffffff;
+      margin-left: 250px;
+      width: 700px;
+      margin-top: 30px;
+  }
+  .form.form_contact{
+     
+      width: 500px;
+      
+  }
+ 
+}
+/*Fin media*/
+.info_title,
+.info_items{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    
+}
+
+.info_title{
+    margin-bottom: 60px;
+    font-family: 'Roboto Slab', serif;
+    
+    
+}
+
+.info_title span{
+    font-size: 200px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
+
+
+
+/* Formulario de Matricula*/
+form.form_contact{
+    width: 62%;
+    padding: 30px 40px;
+}
+
+form.form_contact h2{
+	font-size: 30px;
+	font-weight: 600;
+	color: #303030;
+	margin-bottom: 30px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+
+form.form_contact label{
+    font-weight: 600;
+}
+
+form.form_contact input,
+form.form_contact textarea{
+    width: 100%;
+    padding: 8px 0px 5px;
+    margin-bottom: 10px;
+
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+
+    font-family: 'Open sans';
+	color: #5A5A5A;
+	font-size: 17px;
+	font-weight: 400;
+
+}
+
+form.form_contact textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+    font-weight: bold;
+}
+
+form.form_contact button[type="submit"] {
+    width: 180px;
+	background: #4091EC;
+	padding: 10px;
+	border: none;
+    
+	border-radius: 25px;
+   
+   
+
+    color: #fff;
+	font-family: 'REM', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+    text-decoration: none;
+    align-content: end;
+
+    
+}
+
+form.form_contact button[type="submit"]:hover{
+    background: #3371B6;
+ 
+}
+
+
+
+.grade{
+ 
+        font-family: 'Varela Round', sans-serif;
+        font-size: 20px;
+        margin-top: 2px;
+        margin-bottom: 10px;
+}
+
+.form-select{
+    margin-bottom: 40px ; 
+    font-weight: bold; 
+    border-radius: 20px; 
+}
